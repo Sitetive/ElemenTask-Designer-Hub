@@ -1,0 +1,11 @@
+{
+  "require": {
+      "tecnickcom/tc-lib-pdf": "^8.0",
+    "tecnickcom/tcpdf": "^6.6"
+  },
+  "autoload": {
+      "psr-4": {
+          "Com\\Tecnick\\": "src/"
+      }
+  }
+}

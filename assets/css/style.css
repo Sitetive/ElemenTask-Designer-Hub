@@ -1,0 +1,193 @@
+/* Estilo base */
+.gv-body {
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+/* Colores */
+:root {
+    --color-primary: #673AB7; /* Morado */
+    --color-secondary: #5399f6; /* Azul */
+    --color-light-gray: #e0e0e0;
+    --color-btn-table: #9872db;
+    --color-btn-delete: #db7272;
+    --color-btn-delete_hover: #bd2f2f;
+}
+
+/* UI redondeado */
+.rounded {
+    border-radius: 15px;
+}
+
+.gv-form {
+    display: flex;
+    align-items: center;
+    gap: 16px;  /* espacio entre elementos */
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.gv-form label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.gv-form input[type="text"],
+.gv-form select {
+    padding: 8px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.gv-button {
+    padding: 8px 16px;
+    background-color: #673ab7;  /* Color morado */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s;
+    
+}
+
+.gv-button:hover {
+    background-color: #5e35b1;  /* Un morado un poco más oscuro al pasar el ratón por encima */
+}
+
+/* Botones */
+.gv-btn {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.gv-btn:hover {
+    background-color: var(--color-secondary);
+}
+.gv-button-table{
+    background-color: var(--color-btn-table);
+}
+.gv-button-delete{
+    background-color: var(--color-btn-delete);
+}
+.gv-button-delete:hover{
+    background-color: var(--color-btn-delete_hover);
+}
+/* Contenedores y tarjetas */
+.gv-container, .gv-card {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.gv-card-header {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 10px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.gv-card-body {
+    padding: 20px;
+}
+
+/* Listas */
+.gv-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.gv-li {
+    padding: 10px;
+    border: 1px solid var(--color-light-gray);
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+.gv-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif; /* Cambia esto por tu fuente preferida */
+    color: #333;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.gv-table th,
+.gv-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.gv-table th {
+    background-color: #673ab7; /* Color morado */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.gv-table tr:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el mouse */
+}
+.gv-table thead tr th:first-child{
+    width: auto;
+}
+.gv-table tr td:first-child{
+    text-align: center;
+    width: 10%;
+    padding: 0;
+}
+.gv-table tr td:last-child{
+    text-align: center;
+}
+.gv-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Botones o elementos interactivos en la tabla */
+.gv-table .button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2196f3; /* Color azul */
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.gv-table .button:hover {
+    background-color: #1976d2; /* Color azul oscuro al pasar el mouse */
+}
